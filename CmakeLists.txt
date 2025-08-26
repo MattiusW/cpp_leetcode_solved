@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.10)
+project(cpp_leetcode_solved)
+
+set(CPP_LEETCODE_SOLVED_SOURCES
+    include/1929_Concatenation_of_Array.h
+    src/1929_Concatenation_of_Array.cpp
+)
+
+add_library(cpp_leetcode_solved_lib ${CPP_LEETCODE_SOLVED_SOURCES})
+
+target_include_directories(cpp_leetcode_solved_lib PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+add_executable(main main.cpp)
+
+target_include_directories(main PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+target_link_libraries(main cpp_leetcode_solved_lib)

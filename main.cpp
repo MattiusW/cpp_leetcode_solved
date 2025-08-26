@@ -9,7 +9,7 @@ int main(void) {
     vector<int> full_ans = getConcatenation(nums);
     cout << "Original nums: ";
     for (auto i : nums) cout << i << " ";
-    cout << " Concatenation nums: ";
+    cout << "Concatenation nums: ";
     for (auto j : full_ans) cout << j << " ";
     cout << endl;
 

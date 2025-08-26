@@ -1,4 +1,15 @@
-.gitignore
+# General
+.vscode
+build_debug
+build_releases
+build
+
+# Vim backup
+*~
+*swp
+*.swo
+*.un~
+
 # Prerequisites
 *.d
 

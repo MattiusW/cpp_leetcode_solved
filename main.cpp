@@ -2,7 +2,8 @@
 #include "src/1929_Concatenation_of_Array.cpp"
 #include "src/3110_Score_of_a_String.cpp"
 #include "src/3467_Transform_Array_by_Parity.cpp"
-#include<iostream>
+#include "src/917_Reverse_Only_Letters.cpp"
+#include <iostream>
 
 int main(void) {
     cout << "Riddle solution - 1929 Concatenation of Array:" << endl;
@@ -31,5 +32,12 @@ int main(void) {
     int ans1684 = countConsistentStrings(allowed1684, words1684);
     for (auto i : words1684) cout << i << " "; 
     cout << ";allow: " << allowed1684 << " ;count == " << ans1684 << endl;
+
+    
+    cout << "Riddle solution - 917_Reverse_Only_Letters:" << endl;
+    string s2_917 = "Test1ng-Leet=code-Q!";
+    string reserved1_917 = reverseOnlyLetters(s2_917);
+    cout << "Original string: " << s2_917 << "\n" << "Reserved string: " << reserved1_917;
 }
+
 

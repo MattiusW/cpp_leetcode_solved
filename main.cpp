@@ -3,6 +3,7 @@
 #include "src/3110_Score_of_a_String.cpp"
 #include "src/3467_Transform_Array_by_Parity.cpp"
 #include "src/917_Reverse_Only_Letters.cpp"
+#include "src/1004_Max_Consecutive_Ones_III.cpp"
 #include <iostream>
 
 int main(void) {
@@ -38,6 +39,14 @@ int main(void) {
     string s2_917 = "Test1ng-Leet=code-Q!";
     string reserved1_917 = reverseOnlyLetters(s2_917);
     cout << "Original string: " << s2_917 << "\n" << "Reserved string: " << reserved1_917;
+    cout << endl;
+
+    cout << "1004_Max_Consecutive_Ones_III:" << endl;
+    int k_1004 = 3;
+    vector<int> nums_1004 = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
+    int ans_1004 = longestOnes(nums_1004, k_1004);
+    cout << ans_1004 << endl;
+
 }
 
 

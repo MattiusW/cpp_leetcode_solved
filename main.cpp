@@ -4,6 +4,7 @@
 #include "src/3467_Transform_Array_by_Parity.cpp"
 #include "src/917_Reverse_Only_Letters.cpp"
 #include "src/1004_Max_Consecutive_Ones_III.cpp"
+#include "src/1413_Minimum_Value_to_Get_Positive_Step_by_Step_Sum.cpp"
 #include <iostream>
 
 int main(void) {
@@ -46,6 +47,11 @@ int main(void) {
     vector<int> nums_1004 = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
     int ans_1004 = longestOnes(nums_1004, k_1004);
     cout << ans_1004 << endl;
+
+    cout << "1413_Minimum_Value_to_Get_Positive_Step_by_Step_Sum:" << endl;
+    vector<int> nums_1413 = {2,3,5,-5,-1};
+    int min_1413 =  minStartValue(nums_1413);
+    cout << "min_1413 = " << min_1413 << endl;
 
 }
 

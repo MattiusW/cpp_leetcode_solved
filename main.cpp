@@ -5,9 +5,12 @@
 #include "src/917_Reverse_Only_Letters.cpp"
 #include "src/1004_Max_Consecutive_Ones_III.cpp"
 #include "src/1413_Minimum_Value_to_Get_Positive_Step_by_Step_Sum.cpp"
+#include "src/2540_Minimum_Common_Value.cpp"
+#include "src/2000_Reverse_Prefix_of_Word.cpp"
 #include <iostream>
 
-int main(void) {
+int main(void) 
+{
     cout << "Riddle solution - 1929 Concatenation of Array:" << endl;
     vector<int> nums = { 1, 2, 1 };
     vector<int> full_ans = getConcatenation(nums);
@@ -53,6 +56,17 @@ int main(void) {
     int min_1413 =  minStartValue(nums_1413);
     cout << "min_1413 = " << min_1413 << endl;
 
-}
+    cout << "2540_Minimum_Common_Value:" << endl;
+    vector<int> nums1_2540 = {1,2,3,6};
+    vector<int> nums2_2540 = {2,3,4,5};
+    int ans1_2540 = getCommon(nums1_2540, nums2_2540);
+    cout << ans1_2540 << endl;
 
+    cout << "2000_Reverse_Prefix_of_Word:" << endl;
+    string word_2000 = "abcdefd"; 
+    char ch_2000 = 'd';
+    string ans_word_2000 = reversePrefix(word_2000, ch_2000);
+    cout << "Word 1: " << word_2000 << endl;  
+    cout << "Reversed anserwed: " << ans_word_2000 << endl;
+}
 
